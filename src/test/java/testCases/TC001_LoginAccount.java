@@ -112,6 +112,7 @@ case2: Login button is enable for empty credentials -check error message.*/
 	public void testUIElementsPresence() {
 		LoginPage login = new LoginPage(driver);
         Assert.assertTrue(login.areLoginElementsVisible(), "All login elements should be visible.");
+        Reporter.log("All Login elements are visible: \nuserIDInput\npasswordInput\nLoginButton\nPasswordVisibilityToggle ",true);
 	} 
 	
 }

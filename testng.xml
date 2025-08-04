@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="SuiteJanitri">
+	<listeners>
+		<listener class-name="utilities.ReportManagerExtentAndTestNG"/>
+	</listeners>
+  <test thread-count="5" name="FunctionalTesting">
+    <classes>
+      <class name="testCases.TC001_LoginAccount"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
